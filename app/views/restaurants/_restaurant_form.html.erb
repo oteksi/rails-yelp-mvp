@@ -1,0 +1,18 @@
+<%= simple_form_for (@restaurant)  do |t| %>
+
+<%= t.input :name %>
+
+<%= t.input :address %>
+
+<%= t.input :phone_number %>
+
+<%= t.label :category %>
+<%= t.select :category, ['chinese', 'italian', 'japanese', 'french','belgian'] %>
+
+</br>
+</br>
+
+<%= t.submit %>
+
+<% end %>
+
